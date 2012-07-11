@@ -38,3 +38,6 @@ lost+found
 
 *.log
 *.sum
+
+*.dSYM
+intl/libintl.h
