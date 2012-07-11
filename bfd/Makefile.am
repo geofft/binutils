@@ -373,6 +373,7 @@ BFD32_BACKENDS = \
 	m88kopenbsd.lo \
 	mach-o.lo \
 	mach-o-i386.lo \
+	mach-o-arm.lo \
 	mipsbsd.lo \
 	newsos3.lo \
 	nlm.lo \
@@ -561,6 +562,7 @@ BFD32_BACKENDS_CFILES = \
 	m88kopenbsd.c \
 	mach-o.c \
 	mach-o-i386.c \
+	mach-o-arm.c \
 	mipsbsd.c \
 	newsos3.c \
 	nlm.c \
