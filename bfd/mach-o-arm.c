@@ -120,7 +120,7 @@ static reloc_howto_type arm_howto_table[]=
 };
 
 static bfd_boolean
-bfd_mach_o_arm_swap_reloc_in (arelent *res, bfd_mach_o_reloc_info *reloc)
+bfd_mach_o_arm_swap_reloc_in (arelent *res __attribute((unused)), bfd_mach_o_reloc_info *reloc __attribute((unused)))
 {
   return FALSE;
 #if 0
@@ -225,7 +225,7 @@ bfd_mach_o_arm_swap_reloc_out (arelent *rel, bfd_mach_o_reloc_info *rinfo)
 {
   rinfo->r_address = rel->address;
   rinfo->r_scattered = 0;
-  return false;
+  return FALSE;
 #if 0
   switch (rel->howto->type)
     {
